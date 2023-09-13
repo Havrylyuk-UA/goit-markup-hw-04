@@ -5,6 +5,7 @@
     --shadowblue: #404BBF;
     --grey: #434455;
     --shadowwhite: #F4F4FD;
+    --lightgray: #8E8F99;
 }
 
 * {
@@ -146,6 +147,12 @@ img {
     color: var(--shadowblue);
 }
 
+/* .nav-link-item:active:after {
+    content: "";
+    border-bottom: 4px solid var(--shadowblue);
+    border-radius: 2px;
+} */
+
 .nav-address {
     font-style: normal;
     line-height: 1.5;
@@ -177,6 +184,10 @@ img {
 .section-order {
     background: var(--darkgrey);
     padding: 188px 0;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .order-title {
@@ -252,6 +263,18 @@ img {
     letter-spacing: 0.02em;
 }
 
+.feature-img {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid var(--lightgray);
+    background: var(--shadowwhite);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* The third section */
 
 .section-team {
@@ -300,6 +323,29 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
+}
+
+.team-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.link-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    color: var(--white)
+}
+
+.team-ico {
+    fill: currentColor;
 }
 
 /* The fourth section */
@@ -352,6 +398,12 @@ img {
     padding: 100px 0;
 }
 
+.f-flex {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 /* .footer > div {
     align-items: flex-start;
 } */
@@ -381,4 +433,19 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 264px;
+}
+
+.footer-social {
+    color: var(--white);
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.02em;
+margin-bottom: 16px;
+}
+
+.social-media {
+ margin-left: 120px;
 }
